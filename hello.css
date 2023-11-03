@@ -1,0 +1,312 @@
+* {
+    content: "";
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url(16625.jpg);
+    background-size: cover;
+    zoom: 68%;
+    overflow: hidden;
+}
+
+.roof {
+    position: absolute;
+    border: 2px solid black;
+    width: 70%;
+    height: 150px;
+
+    top: 22%;
+    left: 15%;
+    background-color: #856609;
+
+
+}
+
+.roofmini {
+    border: 13px solid #a0a8a9;
+    width: 150px;
+    height: 150px;
+    z-index: 4;
+    position: absolute;
+    left: 45.66%;
+    top: 25%;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+
+}
+
+.said {
+    position: absolute;
+    border: solid aliceblue;
+    height: 100px;
+    width: 200px;
+    left: 44.6%;
+    clip-path: polygon(50% 15%, 100% 27%, 100% 100%, 0% 100%, 0% 27%);
+    top: 23.5%;
+    background-color: aliceblue;
+
+}
+
+.screen1 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 0;
+    flex-wrap: wrap;
+    bottom: 0;
+}
+
+.appartment1 {
+    width: 45%;
+    border: 2px solid black;
+    background-color: rgb(188, 231, 236);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: content;
+
+}
+
+.floor1 {
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.rwind1 {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    background-color: rgb(220, 204, 231);
+    transition: 0.5s;
+    transform-origin: 0% 0%;
+    height: 100%;
+}
+
+.lwind1 {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    background-color: rgb(253, 252, 153);
+    transition: 0.5s;
+    transform-origin: 100% 100%;
+    left: 50%;
+    height: 100%;
+}
+
+.window.active .lwind1 {
+    transform: rotateY(140deg);
+    z-index: 5;
+    background-color: blue;
+}
+
+.window.active .rwind1 {
+    transform: rotateY(-140deg);
+    z-index: 5;
+    background-color: rgb(216, 244, 10);
+}
+
+.window.active {
+    position: 50%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 150vh;
+    z-index: 5;
+    background-color:rgb(188, 231, 236);
+    
+}
+
+
+
+.window {
+    border: 2px solid black;
+    width: calc(92%/4);
+    height: 100px;
+    margin: 1%;
+    position: relative;
+}
+
+
+
+.appartment2 {
+    position: absolute;
+    width: 45%;
+    border: 2px solid black;
+    background-color: rgb(188, 231, 236);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: content;
+
+    right: 0;
+
+}
+
+.floor2 {
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.rwind2 {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    background-color: rgb(232, 223, 239);
+    transition: 0.5s;
+    transform-origin: 0% 0%;
+    height: 100%;
+}
+
+.lwind2 {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    background-color: rgb(242, 240, 134);
+    transition: 0.5s;
+    transform-origin: 100% 100%;
+    right: 50%;
+    height: 100%;
+}
+
+.window:hover .lwind2 {
+    transform: rotateY(140deg);
+    z-index: 5;
+    background-color: blue;
+}
+
+.window:hover .rwind2 {
+    transform: rotateY(-140deg);
+    z-index: 5;
+    background-color: rgb(216, 244, 10);
+}
+
+.window2 {
+    border: 2px solid black;
+    width: calc(92%/4);
+    height: 100px;
+    margin: 1%;
+    position: relative;
+}
+
+.screen2 {
+    position: absolute;
+    border: 2px solid black;
+    height: 567px;
+    width: 200px;
+    background-color: rgb(203, 226, 245);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.rwind {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    background-color: rgb(69, 49, 21);
+    height: 22%;
+    bottom: 0;
+    right: 50%;
+
+}
+
+.lwind {
+    position: absolute;
+    border: solid;
+    width: 50%;
+    background-color: rgb(196, 196, 185);
+    height: 22%;
+    bottom: 0;
+    left: 50%;
+    
+}
+
+.window2:hover {}
+
+.lwind:hover {
+    transform: rotateY(140deg);
+    z-index: 5;
+    background-color: blue;
+}
+
+.rwind:hover {
+    transform: rotateY(-140deg);
+    z-index: 5;
+    background-color: rgb(216, 244, 10);
+}
+
+.said1 {
+    position: absolute;
+    border: solid;
+    height: 50px;
+    width: 50px;
+    left: 45%;
+    bottom: 20%;
+    z-index: 3;
+    background-color: antiquewhite;
+}
+
+.said2 {
+    position: absolute;
+    border: solid;
+    height: 50px;
+    width: 50px;
+    left: 52.2%;
+    bottom: 20%;
+    z-index: 3;
+    background-color: antiquewhite;
+}
+
+.said3 {
+    position: absolute;
+    border: solid;
+    height: 50px;
+    width: 50px;
+    left: 45%;
+    bottom: 40%;
+    z-index: 3;
+    background-color: antiquewhite;
+}
+
+.said4 {
+    position: absolute;
+    border: solid;
+    height: 50px;
+    width: 50px;
+    left: 52.2%;
+    bottom: 40%;
+    z-index: 3;
+    background-color: antiquewhite;
+}
+
+.said5 {
+    position: absolute;
+    border: solid;
+    height: 50px;
+    width: 50px;
+    left: 45%;
+    bottom: 59%;
+    z-index: 3;
+    background-color: antiquewhite;
+}
+
+.said6 {
+    position: absolute;
+    border: solid;
+    height: 50px;
+    width: 50px;
+    left: 52.2%;
+    bottom: 59%;
+    z-index: 3;
+    background-color: antiquewhite;
+}
